@@ -64,7 +64,7 @@ public class Demo2Application implements CommandLineRunner {
 			user.setPhoneNumber(uPhoneNumber);
 			user.setCity(uCity);
 			
-			System.out.println("Select a movie:");
+			System.out.println("Select a movie to book:");
 			
 			movieDetails.forEach((k,v)->System.out.println(".\t"+v));
 			String movieName = input.next();
