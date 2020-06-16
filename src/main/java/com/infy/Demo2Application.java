@@ -75,7 +75,7 @@ public class Demo2Application implements CommandLineRunner {
 						.findFirst().get();*/
 				
 				String movieServiceMessage = movieService.registerUser(user);
-				System.out.println("Hi"+uName);
+				System.out.println("Hi welcom"+uName);
 				System.out.println(environment.getProperty(movieServiceMessage)+""+movieDetails.entrySet().stream()
 						.filter(entry -> movieName.equals(entry.getValue()))
 						.map(Map.Entry::getKey)
